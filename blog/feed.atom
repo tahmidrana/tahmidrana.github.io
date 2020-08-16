@@ -3,7 +3,7 @@
     <title>Tahmidur Rahman</title>
     <link href="https://tahmidrana.github.io/" />
     <link type="application/atom+xml" rel="self" href="https://tahmidrana.github.io/blog/feed.atom" />
-    <updated>2020-08-15T10:50:37+00:00</updated>
+    <updated>2020-08-16T16:06:30+00:00</updated>
     <id>https://tahmidrana.github.io/blog/feed.atom</id>
     <author>
         <name>Tahmidur Rahman</name>
@@ -11,7 +11,7 @@
                 <entry>
     <id>https://tahmidrana.github.io/articles/my-custom-post</id>
     <link type="text/html" rel="alternate" href="https://tahmidrana.github.io/articles/my-custom-post" />
-    <title>My Custom Post</title>
+    <title>My Custom Post with a really really really logn long long title</title>
     <published>2020-03-23T00:00:00+00:00</published>
     <updated>2020-03-23T00:00:00+00:00</updated>
     <author>
