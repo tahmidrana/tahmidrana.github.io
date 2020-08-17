@@ -33,10 +33,10 @@
             </script>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=171e1c2fd254847cf37c">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=038b49d6e1513d492b39">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans">
+    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-900 leading-normal font-sans" style="background-color: #f3f7f9;">
         <header class="flex items-center bg-white border-b h-24 py-4" role="banner">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="items-center">
@@ -98,7 +98,7 @@
         </header>
 
         <nav id="js-nav-menu" class="nav-menu hidden lg:hidden">
-    <ul class="my-0">
+    <ul class="mx-0 my-0 list-none">
         <li class="pl-4">
             <a
                 title="Tahmidur Rahman Articles"
@@ -132,18 +132,12 @@
 
         <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
                 
-    <h1 class="leading-none mb-2">Dumping Mysql database</h1>
-
-    <p class="text-gray-700 text-xl md:mt-0">Tahmidur Rahman  •  August 14, 2020</p>
-
-                        <a
-                href="/articles/categories/snippets"
-                title="View posts in snippets"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
-            >snippets</a>
-            
-    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
-        <blockquote>
+    <div class="px-10 py-8 sm:px-16 sm:py-12 bg-white">
+        <h1 class="leading-none mb-2 text-2xl sm:text-4xl">Dumping Mysql database</h1>
+    
+    
+        <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+            <blockquote>
   <p>Dump a single database:</p>
 </blockquote>
 
@@ -158,9 +152,18 @@
 <pre><code class="language-mysql">// mysql
 # mysqldump -u [uname] -p --all-databases &gt; all_db_backup.sql
 </code></pre>
-    </div>
+        </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+        <p class="text-gray-700 text-xl md:mt-0 mb-2">Tahmidur Rahman  •  August 14, 2020</p>
+
+                                    <a
+                    href="/articles/categories/snippets"
+                    title="View posts in snippets"
+                    class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                ># snippets</a>
+                        </div>
+
+    <nav class="flex justify-between text-sm md:text-base mt-4">
         <div>
                             <a href="https://tahmidrana.github.io/snippets/mysql-disable-fullgroupby" title="Older Post: Disable sql_mode ONLY_FULL_GROUP_BY for Mysql">
                     &LeftArrow; Disable sql_mode ONLY_FULL_GROUP_BY for Mysql
@@ -175,7 +178,7 @@
     </nav>
         </main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+        <footer class="bg-white border-t text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
                     &copy; <a href="https://tahmidrana.github.io" title="Tahmidur Rahman">Tahmidur Rahman</a> 2020.

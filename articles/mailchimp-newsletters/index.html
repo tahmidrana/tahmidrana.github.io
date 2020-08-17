@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Personal Blog of Tahmidur Rahman">
 
-        <meta property="og:title" content="Tahmidur Rahman"/>
+        <meta property="og:title" content="Mailchimp Newsletters | Tahmidur Rahman"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tahmidrana.github.io/about"/>
+        <meta property="og:url" content="https://tahmidrana.github.io/articles/mailchimp-newsletters"/>
         <meta property="og:description" content="Personal Blog of Tahmidur Rahman" />
 
-        <title>Tahmidur Rahman</title>
+        <title>Mailchimp Newsletters | Tahmidur Rahman</title>
 
         <link rel="home" href="https://tahmidrana.github.io/">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Tahmidur Rahman Atom Feed">
 
-            <meta property="og:title" content="About Tahmidur Rahman" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tahmidrana.github.io/about"/>
-    <meta property="og:description" content="A little bit about Tahmidur Rahman" />
+            <meta property="og:title" content="Mailchimp Newsletters" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://tahmidrana.github.io/articles/mailchimp-newsletters"/>
+    <meta property="og:description" content="Mailchimp newsletter signups, just add a url." />
 
                     <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84872879-2"></script>
@@ -63,7 +63,7 @@
     </a>
 
     <a title="About" href="/about"
-        class="ml-6 text-gray-700 hover:text-gray-900 hover:underline active text-gray-900 underline">
+        class="ml-6 text-gray-700 hover:text-gray-900 hover:underline ">
         About
     </a>
 
@@ -117,7 +117,7 @@
             <a
                 title="Tahmidur Rahman About"
                 href="/about"
-                class="nav-menu__item hover:text-blue-500 active text-blue"
+                class="nav-menu__item hover:text-blue-500 "
             >About</a>
         </li>
         <li class="pl-4">
@@ -131,38 +131,68 @@
 </nav>
 
         <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
-                <h1>Hey,</h1>
-
-    <img src="/assets/img/web_developer.svg"
-        alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
-
-    <p class="mb-6">I’m <strong>Tahmid</strong>, a full stack software developer, passionate about learning new things, building applications with PHP, Laravel, Vuejs.</p>
+                        <img src="/assets/img/post-cover-image-1.png" alt="Mailchimp Newsletters cover image" class="">
     
-    <p>I have been writing code for almost 6 years. During that time I developed some enterprise level application for renowned companies in Bangladesh.</p>
+    <div class="px-10 py-8 sm:px-16 sm:py-12 bg-white">
+        <h1 class="leading-none mb-2 text-2xl sm:text-4xl">Mailchimp Newsletters</h1>
     
-    <p>I created this website to spread tech knowledge among others that I learned over the years.</p>
+    
+        <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+            <p><a href="https://mailchimp.com/">Mailchimp</a> is a fantastic marketing platform, and takes the pain out of managing email lists and campaigns. The blog starter template comes with a beautiful pre-built newsletter form, that only needs a Mailchimp list URL to send to.</p>
 
-    <h3>Links</h3>
-    <ul class="list-disc list-inside leading-9">
-        <li>Github: <a href="https://github.com/tahmidrana">github.com/tahmidrana</a></li>
-        <li>Linkedin: <a href="https://linkedin.com/in/tahmidr/">linkedin.com/in/tahmidr/</a></li>
-        <li>Stackoverflow: <a href="https://stackoverflow.com/users/5212775/tahmidur-rahman">stackoverflow.com/users/5212775/tahmidur-rahman</a></li>
-    </ul>
+<p>To begin accepting subscribers, simply add your list URL to the form <code>action</code> in the <code>source/_components/newsletter-signup.blade.php</code> file.</p>
 
-    <h3>Skills</h3>
-    <ul class="list-disc list-inside leading-9">
-        <li>Backend Framework: Laravel, Codeigniter, Django, Express JS</li>
-        <li>Languages: Php, Python, Javascript</li>
-        <li>Frontend: Vue JS, jQuery, Stylus</li>
-        <li>Database: MySql, MongoDB</li>
-        <li>Caching: Memcached, Redis</li>
-        <li>Web server: LAMP on Ubuntu</li>
-        <li>Version Control: Git, Github</li>
-        <li>Web Service: REST</li>
-        <li>Management Tool: Jira</li>
-        <li>Containerization: Docker</li>
-    </ul>
+<pre><code class="language-html">&lt;!-- source/_components/newsletter-signup.blade.php --&gt;
+
+&lt;div id="mc_embed_signup"&gt;
+    &lt;form action="https://your-mail-chimp-list-manage-url" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate&gt;
+        &lt;div id="mc_embed_signup_scroll"&gt;
+            &lt;h2&gt;Sign up for newsletter&lt;/h2&gt;
+            &lt;div class="mc-field-group"&gt;
+                &lt;label for="mce-EMAIL"&gt;Email Address &lt;/label&gt;
+                &lt;input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email address"&gt;
+            &lt;/div&gt;
+            &lt;div id="mce-responses" class="clear"&gt;
+                &lt;div class="response" id="mce-error-response" style="display:none"&gt;&lt;/div&gt;
+                &lt;div class="response" id="mce-success-response" style="display:none"&gt;&lt;/div&gt;
+            &lt;/div&gt;    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+
+            &lt;div style="position: absolute; left: -5000px;" aria-hidden="true"&gt;&lt;input type="text" name="b_25582686a9fc051afd5453557_189578c854" tabindex="-1" value=""&gt;&lt;/div&gt;
+            &lt;div class="clear"&gt;&lt;input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>Example</h3>
+
+<p><img src="/assets/img/newsletter.png"></p>
+
+<p><a href="https://mailchimp.com/help/host-your-own-signup-forms/#Edit_your_Custom_Signup_Form">See how to get your Mailchimp list URL.</a></p>
+        </div>
+
+        <p class="text-gray-700 text-xl md:mt-0 mb-2">Tahmidur Rahman  •  November 21, 2018</p>
+
+                                    <a
+                    href="/articles/categories/feature"
+                    title="View posts in feature"
+                    class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                ># feature</a>
+                        </div>
+
+    <nav class="flex justify-between text-sm md:text-base mt-4">
+        <div>
+                            <a href="https://tahmidrana.github.io/articles/my-first-blog-post" title="Older Post: My First Blog Post">
+                    &LeftArrow; My First Blog Post
+                </a>
+                    </div>
+
+        <div>
+                            <a href="https://tahmidrana.github.io/articles/fuse-search" title="Newer Post: Fuse Search">
+                    Fuse Search &RightArrow;
+                </a>
+                    </div>
+    </nav>
         </main>
 
         <footer class="bg-white border-t text-center text-sm mt-12 py-4" role="contentinfo">

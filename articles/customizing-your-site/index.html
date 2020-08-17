@@ -6,21 +6,21 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Personal Blog of Tahmidur Rahman">
 
-        <meta property="og:title" content="Tahmidur Rahman"/>
+        <meta property="og:title" content="Customizing Your Site | Tahmidur Rahman"/>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tahmidrana.github.io/about"/>
+        <meta property="og:url" content="https://tahmidrana.github.io/articles/customizing-your-site"/>
         <meta property="og:description" content="Personal Blog of Tahmidur Rahman" />
 
-        <title>Tahmidur Rahman</title>
+        <title>Customizing Your Site | Tahmidur Rahman</title>
 
         <link rel="home" href="https://tahmidrana.github.io/">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Tahmidur Rahman Atom Feed">
 
-            <meta property="og:title" content="About Tahmidur Rahman" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tahmidrana.github.io/about"/>
-    <meta property="og:description" content="A little bit about Tahmidur Rahman" />
+            <meta property="og:title" content="Customizing Your Site" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://tahmidrana.github.io/articles/customizing-your-site"/>
+    <meta property="og:description" content="Customize your site with CSS and JS" />
 
                     <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84872879-2"></script>
@@ -63,7 +63,7 @@
     </a>
 
     <a title="About" href="/about"
-        class="ml-6 text-gray-700 hover:text-gray-900 hover:underline active text-gray-900 underline">
+        class="ml-6 text-gray-700 hover:text-gray-900 hover:underline ">
         About
     </a>
 
@@ -117,7 +117,7 @@
             <a
                 title="Tahmidur Rahman About"
                 href="/about"
-                class="nav-menu__item hover:text-blue-500 active text-blue"
+                class="nav-menu__item hover:text-blue-500 "
             >About</a>
         </li>
         <li class="pl-4">
@@ -131,38 +131,105 @@
 </nav>
 
         <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
-                <h1>Hey,</h1>
-
-    <img src="/assets/img/web_developer.svg"
-        alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
-
-    <p class="mb-6">I’m <strong>Tahmid</strong>, a full stack software developer, passionate about learning new things, building applications with PHP, Laravel, Vuejs.</p>
+                
+    <div class="px-10 py-8 sm:px-16 sm:py-12 bg-white">
+        <h1 class="leading-none mb-2 text-2xl sm:text-4xl">Customizing Your Site</h1>
     
-    <p>I have been writing code for almost 6 years. During that time I developed some enterprise level application for renowned companies in Bangladesh.</p>
     
-    <p>I created this website to spread tech knowledge among others that I learned over the years.</p>
+        <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+            <p>This starter template comes pre-loaded with <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility CSS framework that allows you to customize and build complex designs without touching a line of CSS. There are also a few base Sass files in the <code>/source/_assets/sass</code> folder, set up with the expectation that you can add any custom CSS into <code>_blog.scss</code>.</p>
 
-    <h3>Links</h3>
-    <ul class="list-disc list-inside leading-9">
-        <li>Github: <a href="https://github.com/tahmidrana">github.com/tahmidrana</a></li>
-        <li>Linkedin: <a href="https://linkedin.com/in/tahmidr/">linkedin.com/in/tahmidr/</a></li>
-        <li>Stackoverflow: <a href="https://stackoverflow.com/users/5212775/tahmidur-rahman">stackoverflow.com/users/5212775/tahmidur-rahman</a></li>
-    </ul>
+<blockquote>
+  <p>You can also re-work the architecture of the Sass files any way you’d like; just make sure to keep the <code>@tailwind</code> references in your final <code>main.scss</code> file.</p>
+</blockquote>
 
-    <h3>Skills</h3>
-    <ul class="list-disc list-inside leading-9">
-        <li>Backend Framework: Laravel, Codeigniter, Django, Express JS</li>
-        <li>Languages: Php, Python, Javascript</li>
-        <li>Frontend: Vue JS, jQuery, Stylus</li>
-        <li>Database: MySql, MongoDB</li>
-        <li>Caching: Memcached, Redis</li>
-        <li>Web server: LAMP on Ubuntu</li>
-        <li>Version Control: Git, Github</li>
-        <li>Web Service: REST</li>
-        <li>Management Tool: Jira</li>
-        <li>Containerization: Docker</li>
-    </ul>
+<pre><code class="language-scss">// source/_assets/sass/main.scss
+
+@tailwind preflight;
+@tailwind components;
+
+// Code syntax highlighting,
+// https://highlightjs.org
+@import '~highlightjs/styles/default';
+
+@import 'base';
+@import 'navigation';
+@import 'mailchimp';
+@import 'blog';
+
+@tailwind utilities;
+</code></pre>
+
+<hr />
+
+<h2>Typography Styles</h2>
+
+<p>Here’s a quick preview of what some of the basic type styles will look like in this starter template:</p>
+
+<h1>h1 Heading</h1>
+
+<h2>h2 Heading</h2>
+
+<h3>h3 Heading</h3>
+
+<h4>h4 Heading</h4>
+
+<h5>h5 Heading</h5>
+
+<h6>h6 Heading</h6>
+
+<p>The quick brown fox jumps over the lazy dog</p>
+
+<p><s>The quick brown fox jumps over the lazy dog</s></p>
+
+<p><u>The quick brown fox jumps over the lazy dog</u></p>
+
+<p><em>The quick brown fox jumps over the lazy dog</em></p>
+
+<p><strong>The quick brown fox jumps over the lazy dog</strong></p>
+
+<p><code>The quick brown fox jumps over the lazy dog</code></p>
+
+<p><small>The quick brown fox jumps over the lazy dog</small></p>
+
+<blockquote>
+  <p>The quick brown fox jumps over the lazy dog</p>
+</blockquote>
+
+<p><a href="#">The quick brown fox jumps over the lazy dog</a></p>
+
+<pre><code class="language-php">class Foo extends bar
+{
+    public function fooBar()
+    {
+        //
+    }
+}
+</code></pre>
+        </div>
+
+        <p class="text-gray-700 text-xl md:mt-0 mb-2">Tahmidur Rahman  •  December 24, 2018</p>
+
+                                    <a
+                    href="/articles/categories/configuration"
+                    title="View posts in configuration"
+                    class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+                ># configuration</a>
+                        </div>
+
+    <nav class="flex justify-between text-sm md:text-base mt-4">
+        <div>
+                            <a href="https://tahmidrana.github.io/articles/custom-404-page" title="Older Post: Custom 404 Pages">
+                    &LeftArrow; Custom 404 Pages
+                </a>
+                    </div>
+
+        <div>
+                            <a href="https://tahmidrana.github.io/articles/getting-started" title="Newer Post: Getting Started">
+                    Getting Started &RightArrow;
+                </a>
+                    </div>
+    </nav>
         </main>
 
         <footer class="bg-white border-t text-center text-sm mt-12 py-4" role="contentinfo">
