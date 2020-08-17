@@ -11,3 +11,12 @@
 @import 'blog';
 
 @tailwind utilities;
+
+
+hr {
+    border-color: #ddd;
+}
+
+ul, ol{
+    margin-left: 25px;
+}

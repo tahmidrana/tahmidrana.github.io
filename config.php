@@ -3,26 +3,32 @@
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'http://localhost:3000',
     'production' => false,
-    'siteName' => 'Blog Starter Template',
-    'siteDescription' => 'Generate an elegant blog with Jigsaw',
-    'siteAuthor' => 'Author Name',
+    'siteName' => 'Tahmidur Rahman',
+    'siteDescription' => 'Personal Blog of Tahmidur Rahman',
+    'siteAuthor' => 'Tahmidur Rahman',
+    'contact_email' => 'tahmidrana@gmail.com',
 
     // collections
     'collections' => [
         'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
+            'author' => 'Tahmidur Rahman', // Default author, if not provided in a post
             'sort' => '-date',
-            'path' => 'blog/{filename}',
+            'path' => 'articles/{filename}',
         ],
         'categories' => [
-            'path' => '/blog/categories/{filename}',
+            'path' => '/articles/categories/{filename}',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
                     return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
                 });
             },
+        ],
+        'snippets' => [
+            'author' => 'Tahmidur Rahman', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => 'snippets/{filename}',
         ],
     ],
 
@@ -59,5 +65,13 @@ return [
     },
     'isActive' => function ($page, $path) {
         return Str::endsWith(trimPath($page->getPath()), trimPath($path));
+    },
+    'allCategories' => function ($page, $posts) {
+        return $posts->pluck('categories')->flatten()->unique();
+    },
+    'countPostsInCategory' => function ($page, $posts, $category) {
+        return $posts->reduce(function ($carry, $post) use ($category) {
+            return $carry + collect($post->categories)->contains($category);
+        });
     },
 ];

@@ -19,7 +19,7 @@
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
             <a
-                href="{{ '/blog/categories/' . $category }}"
+                href="{{ '/articles/categories/' . $category }}"
                 title="View posts in {{ $category }}"
                 class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
             >{{ $category }}</a>

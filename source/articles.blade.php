@@ -1,29 +1,50 @@
 ---
 pagination:
     collection: posts
-    perPage: 4
+    perPage: 8
 ---
 @extends('_layouts.master')
 
 @push('meta')
-    <meta property="og:title" content="{{ $page->siteName }} Blog" />
+    <meta property="og:title" content="{{ $page->siteName }} Articles" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ $page->getUrl() }}"/>
-    <meta property="og:description" content="The list of blog posts for {{ $page->siteName }}" />
+    <meta property="og:description" content="The list of articles for {{ $page->siteName }}" />
 @endpush
 
 @section('body')
-    <h1>Blog</h1>
+    <h1>Articles</h1>
 
+    <span class="uppercase font-semibold leading-loose tracking-wide text-grey-darkest">Sort by Category</span>
+
+    <div class="flex-auto w-full container mb-4">
+        @foreach ($page->allCategories($posts) as $category)
+            <a 
+            href="/articles/categories/{{ $category }}"
+            class="inline-block bg-gray-200 hover:bg-blue-100 leading-loose tracking-wide text-gray-900 uppercase text-xs font-semibold rounded mr-4 my-2 px-3 pt-px"
+            >
+                {{ $category }}
+                ({{ $page->countPostsInCategory($posts, $category) }})
+            </a>
+        @endforeach
+    </div>
     <hr class="border-b my-6">
 
     @foreach ($pagination->items as $post)
-        @include('_components.post-preview-inline')
+        @include('_components.post-preview-list', ['constrain_image_to_grid' => false])
 
         @if ($post != $pagination->items->last())
             <hr class="border-b my-6">
         @endif
     @endforeach
+
+    {{-- @foreach ($pagination->items as $post)
+        @include('_components.post-preview-inline')
+
+        @if ($post != $pagination->items->last())
+            <hr class="border-b my-6">
+        @endif
+    @endforeach --}}
 
     @if ($pagination->pages->count() > 1)
         <nav class="flex text-base my-8">
