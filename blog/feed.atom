@@ -3,12 +3,103 @@
     <title>Tahmidur Rahman</title>
     <link href="https://tahmidrana.github.io/" />
     <link type="application/atom+xml" rel="self" href="https://tahmidrana.github.io/blog/feed.atom" />
-    <updated>2020-08-16T16:06:30+00:00</updated>
+    <updated>2020-08-17T14:44:30+00:00</updated>
     <id>https://tahmidrana.github.io/blog/feed.atom</id>
     <author>
         <name>Tahmidur Rahman</name>
     </author>
                 <entry>
+    <id>https://tahmidrana.github.io/articles/add-new-user-ubuntu</id>
+    <link type="text/html" rel="alternate" href="https://tahmidrana.github.io/articles/add-new-user-ubuntu" />
+    <title>Adding a new user on Ubuntu 18.04</title>
+    <published>2020-08-17T00:00:00+00:00</published>
+    <updated>2020-08-17T00:00:00+00:00</updated>
+    <author>
+        <name>Tahmidur Rahman</name>
+    </author>
+    <summary type="html">Photo by James Harrison on Unsplash
+
+After creating a linux server, the first thing we should do is to create a non-root user. Because, running as the &lt;code&gt;root&lt;/code&gt; user gives complete control over a system and users, which is really dangerous. To......</summary>
+    <content type="html"><![CDATA[
+        <p><span>Photo by <a  href="https://unsplash.com/@jstrippa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">James Harrison</a> on <a  href="https://unsplash.com/s/photos/hacker?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+
+<p>After creating a linux server, the first thing we should do is to create a non-root user. Because, running as the <code>root</code> user gives complete control over a system and users, which is really dangerous. To create a non-root user we need to follow below instructions.</p>
+
+<h3>Prerequisites</h3>
+
+<ul>
+<li>Access to your Ubuntu System as <code>root</code> or via <code>sudo</code> command is required</li>
+</ul>
+
+<h5><strong>Step 1- Login to server using ssh:</strong></h5>
+
+<p>Use below command to Login to your ubuntu server from terminal. Use powershell or git bash from windows pc.</p>
+
+<pre><code class="language-bash">// replace "xx.xx.xx.xx" with your server ip
+$ ssh root@xx.xx.xx.xx
+</code></pre>
+
+<p>Once you are logged in as <code>root</code>, we're prepared to add the new user account that we will use to log in from now on.</p>
+
+<h5><strong>Step - 2: Create user:</strong></h5>
+
+<p>Create a new user with this command below:</p>
+
+<pre><code class="language-bash">// `sudo` is optional if you are signed in as `root` user
+$ sudo adduser sammy
+</code></pre>
+
+<p>You will be asked some questions like <strong>new password</strong>, <strong>retype new password</strong>, <strong>full name</strong> and some other optional informations. This example creates a new user called <code>sammy</code>, but you should replace it with a username that you like.</p>
+
+<p>Now that you have created a new user <code>sammy</code>, you can login to your server with the newly created user:</p>
+
+<pre><code class="language-bash">// replace "xx.xx.xx.xx" with your server ip
+$ ssh sammy@xx.xx.xx.xx
+</code></pre>
+
+<p>If you need your new user to have access to administrative functionality, continue on to the next section.</p>
+
+<h3>Granting a User Sudo Privileges</h3>
+
+<p>If your new user should have the ability to execute commands with root (administrative) privileges, you will need to give the new user access to <code>sudo</code>.
+With below command you can see groups of your new user:</p>
+
+<pre><code class="language-bash">$ groups sammy
+// Output: sammy : sammy
+</code></pre>
+
+<p>In order to add the user to a new group, we can use the <code>usermod</code> command:</p>
+
+<pre><code class="language-bash">// this will add `sammy` to `sudo` group
+$ usermod -aG sudo sammy
+</code></pre>
+
+<h3>Deleting a User</h3>
+
+<p>You can delete the user itself, without deleting any of their files, by typing the following command as <strong>root</strong>:</p>
+
+<pre><code class="language-bash">$ sudo deluser sammy
+</code></pre>
+
+<p>To delete the users home directory along with the user, use the following command:</p>
+
+<pre><code class="language-bash">$ deluser --remove-home sammy
+</code></pre>
+
+<blockquote>
+  <p>For more details. please follow below reference links.</p>
+</blockquote>
+
+<p>Referrences:</p>
+
+<ol>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04">Ubuntu 18.04 (Digitalocean)</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04">Ubuntu 16.04 (Digitalocean)</a></li>
+<li><a href="https://tahmidrana.blogspot.com/">My previous blog post</a></li>
+</ol>
+    ]]></content>
+</entry>
+            <entry>
     <id>https://tahmidrana.github.io/articles/my-custom-post</id>
     <link type="text/html" rel="alternate" href="https://tahmidrana.github.io/articles/my-custom-post" />
     <title>My Custom Post with a really really really logn long long title</title>
