@@ -2,112 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
   <loc>https://tahmidrana.github.io/about</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/blog/feed.atom</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/contact</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/snippets</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles/categories/configuration</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles/categories/feature</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles/categories/server</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles/categories/snippets</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/articles/add-new-user-ubuntu</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/custom-404-page</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/customizing-your-site</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/fuse-search</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/getting-started</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/mailchimp-newsletters</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/my-custom-post</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
-  <changefreq>daily</changefreq>
- </url>
- <url>
-  <loc>https://tahmidrana.github.io/articles/my-first-blog-post</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/snippets/add-file-to-previous-commit</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/snippets/alpinejs-for-loop</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/snippets/dump-mysql-database</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
   <loc>https://tahmidrana.github.io/snippets/mysql-disable-fullgroupby</loc>
-  <lastmod>2020-08-17T18:38:17+00:00</lastmod>
+  <lastmod>2020-08-18T04:30:37+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
