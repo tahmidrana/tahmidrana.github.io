@@ -20,7 +20,7 @@ description:
 After creating a linux server, the first thing we should do is to create a non-root user. Because, running as the root user gives complete control over a system and users, which is really dangerous. To create a non-root user we need to follow below instructions.
 
 ## Prerequisites
-* Access to your Ubuntu System as root or via sudo command is required
+* Access to your Ubuntu System as root or via sudo command is required.
 
 ## Step 1- Login to server using ssh:
 Use below command to Login to your ubuntu server from terminal. Use powershell or git bash from windows pc.
