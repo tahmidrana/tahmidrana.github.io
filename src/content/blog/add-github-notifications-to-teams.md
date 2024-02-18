@@ -4,7 +4,7 @@ pubDatetime: 2024-02-18T14:32:00
 # modDatetime: 2023-12-21T09:12:47.400Z
 title: Github notifications to Teams channel
 slug: github-notifications-to-teams-channel
-featured: false
+featured: true
 draft: false
 tags:
   - teams
